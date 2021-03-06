@@ -1,6 +1,8 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 
+// comment
+
 function App() {
   const [facts, setFacts] = useState([])
 
