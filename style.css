@@ -54,7 +54,7 @@ body {
   width: 1200px;
 }
 header {
-  background-image: url(../assets/MG.webp);
+  background-image: url(./assets/MG.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
