@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
   box-sizing: border-box;
   list-style: none;
@@ -8,7 +10,7 @@
   --bg: #0b1d26;
   --white: #ffffff;
   --white-transparent: rgba(255, 255, 255, 0.2);
-  --letra-logo: impact;
+  --letra-logo: "Anton";
   --ancho-p: 30rem;
   --lenght-number-section: 12rem;
 }
@@ -74,7 +76,8 @@ header {
 .header-logo {
   font-family: var(--letra-logo);
   font-size: 2rem;
-  -webkit-text-stroke-width: 1.2px;
+  font-weight: 600;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--white);
 }
 .header-nav-bar li {
@@ -88,16 +91,18 @@ header {
 }
 .header-nav2 {
   display: grid;
-  grid-template-columns: 27% 1fr;
+  grid-template-columns:30px 1fr;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 15px 0;
+}
+.header-media_icons {
+display: flex;
+flex-direction: column;
 }
 .header-nav2 img {
-  display: flex;
   grid-column: 1/2;
   grid-row: 1/2;
   height: 30px;
-  margin-bottom: 5px;
   width: 30px;
 }
 .header-portada-text {
@@ -106,7 +111,7 @@ header {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 3rem;
-  margin-left: 10%;
+  margin-left: 30%;
 }
 .header-nav2-bar {
   position: fixed;
@@ -175,12 +180,18 @@ main {
 }
 .main-section1-text {
   align-self: center;
-  border-top: var(--accent) 3px solid;
   grid-column: 1/2;
   grid-row: 1/2;
   justify-self: self-end;
   text-align: right;
   margin-right: 30px;
+}
+.main-section1-text hr {
+    border-color: var(--accent);
+    border-width: 2px;
+    width:30%;
+    position: relative;
+    right: -35%;
 }
 .main-section1-text a {
   color: var(--accent);
@@ -206,12 +217,18 @@ main {
 }
 .main-section2-text {
   align-self: center;
-  border-top: var(--accent) 3px solid;
   grid-column: 2/3;
   grid-row: 2/3;
   justify-self: self-start;
   text-align: left;
   margin-left: 30px;
+}
+.main-section2-text hr {
+  border-color: var(--accent);
+  border-width: 2px;
+  width:30%;
+  position: relative;
+  right: 35%;
 }
 .main-section2-text a {
   color: var(--accent);
@@ -237,12 +254,18 @@ main {
 }
 .main-section3-text {
   align-self: center;
-  border-top: var(--accent) 3px solid;
   grid-column: 1/2;
   grid-row: 3/4;
   justify-self: self-end;
   text-align: right;
   margin-right: 30px;
+}
+.main-section3-text hr {
+  border-color: var(--accent);
+  border-width: 2px;
+  width:30%;
+  position: relative;
+  right: -35%;
 }
 .main-section3-text a {
   color: var(--accent);
@@ -265,11 +288,13 @@ footer {
 .footer-logo {
   grid-column: 1/2;
   grid-row: 1/2;
+  padding-left: 15px;
 }
 .footer-logo a {
   font-family: var(--letra-logo);
   font-size: 2rem;
-  -webkit-text-stroke-width: 1.2px;
+  font-weight: 600;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--white);
 }
 .footer-servicio {
